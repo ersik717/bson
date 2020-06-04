@@ -1,0 +1,17 @@
+# class ProductForm(models.Model):
+# 	form_name = models.CharField('Имя формы', max_length=35)
+# 	form_type = models.CharField('Тип формы', max_length=35)
+# 	form_calory = models.IntegerField('Калории формы', default=0)
+# 	form_description = models.TextField('Описание формы', max_length=120)
+
+#productform = models.ForeignKey(ProductForm, on_delete = models.CASCADE)
+
+, ProductFormListSerializer, ProductFormDetailSerializer
+, ProductFormListView,  ProductFormDetailView,  ProductFormCreateView
+
+
+
+ObtainTokenPairWithColorView, CustomUserCreate, LoginPage, UserListView, UserDetailView, ProductListView,  ProductDetailView,  ProductCreateView, ProductFormListView,  ProductFormDetailView,  ProductFormCreateView, ProductStuffListView,  ProductStuffDetailView,  ProductStuffCreateView, ProductToppingListView,  ProductToppingDetailView,  ProductToppingCreateView
+
+
+MyTokenObtainPairSerializer, CustomUserSerializer, UserListSerializer, ProductListSerializer, ProductDetailSerializer, ProductFormListSerializer, ProductFormDetailSerializer, ProductStuffListSerializer, ProductStuffDetailSerializer, ProductToppingListSerializer, ProductToppingDetailSerializer

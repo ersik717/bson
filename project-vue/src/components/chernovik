@@ -1,0 +1,21 @@
+<div v-for="product in products">
+							<div v-for="order in orders">
+								<div v-for="user in users">
+									<!-- <div v-for="catalog in catalogs"> -->
+										<div v-if="product.order_id == order.id && order.user_id == user.id && user.username == usern" style="color: #222222; background-color: #FFFFFF; height: 84px; margin-left: 56px; margin-right: 56px; padding-top: 14px; padding-bottom: 14px; border-radius: 28px; box-shadow: 0px 7px 35px #000000;">
+											<div class="row">
+												<span style="font-size:35px; margin-left: 42px;"> </span>
+												<!-- <img :src="catalog.catalog_image" width = "56" height="56" style="border-radius:21px; margin-left:21px;">		 -->
+												
+												<span style="font-size:21px; margin-left: 21px; margin-top:14px; font-weight:bold;">{{ product.product_name }} - {{ product.product_cost }} тг.</span>
+
+												<button class="btn btn-danger" @click="deleteProduct(product.id)" height="34px" style="position: absolute; margin-left: 1120px; margin-top:14px;">Удалить</button>
+
+												<!-- <button @click="deleteProduct(product.id)">asd</button> -->
+											</div>											
+										</div>
+									<!-- </div>  product.product_catalog_id == catalog.id && -->
+								</div>
+							</div><br>
+							{{ total += product.product_cost }}
+						</div>
